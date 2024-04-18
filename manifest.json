@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "JanitorAI Hide Blocked Bots",
+  "description": "This extension hides blocked bots on JanitorAI",
+  "version": "1.0",
+  "icons": {
+    "16": "jaib16.png",
+    "48": "jaib48.png",
+    "128": "jaib128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "jaib16.png",
+      "48": "jaib48.png",
+      "128": "jaib128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "js": ["src/hideblocked.ts"],
+      "matches": ["https://janitorai.com/*"]
+    }
+  ]
+
+}
