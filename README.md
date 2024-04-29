@@ -1,10 +1,11 @@
-# JanitorAI Hide Blocked Bots
+# JanitorAI Enhanced
 
-This is a Chrome extension that hides blocked bots on the JanitorAI website.
+This is a Chrome extension that adds a few extra functionalities to JanitorAI.
 
 ## Features
 
 - Automatically hides blocked bots from the list of available bots on JanitorAI.
+- Allows expanding bot profile pictures in chat by clicking the bot thumbnail in any message.
 - Seamlessly integrates with the JanitorAI website, providing a cleaner user experience.
 - Lightweight and efficient, with minimal impact on browser performance.
 
