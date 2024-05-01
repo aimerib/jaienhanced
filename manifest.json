@@ -19,7 +19,7 @@
   "content_scripts": [
     {
       "js": ["src/hideblocked.ts"],
-      "matches": ["https://janitorai.com/"]
+      "matches": ["https://janitorai.com/*"]
     },
     {
       "js": ["src/expandImage.ts"],

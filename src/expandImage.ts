@@ -3,6 +3,7 @@ function expandImage() {
   const images = findNodesWithImages();
   images.forEach(node => {
     node.addEventListener('click', openModal as EventListener);
+    node.style.cursor = 'pointer';
   });
 }
 
@@ -44,13 +45,13 @@ function closeModal(event: MouseEvent) {
   }
 }
 
-function findNodesWithImages(): NodeListOf<Element> {
-  const nodes = document.querySelectorAll("img[alt='Avatar']:not([src*='/hotlink-ok'])");
-  return nodes;
+function findNodesWithImages(): NodeListOf<HTMLImageElement> {
+  return document.querySelectorAll("img[alt='Avatar']");
 }
 
 function areChatElementsLoaded() {
-  return document.querySelector('div[data-test-id="virtuoso-item-list"]') !== null;
+  const images = findNodesWithImages();
+  return images.length > 0;
 }
 
 const imageObserver = new MutationObserver(function (_mutations) {
